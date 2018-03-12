@@ -1,0 +1,29 @@
+name: aws-ecs-delete-scheduled-task
+version: 0.0.4
+description: Delete Scheduled Task from AWS ECS
+keywords:
+  - aws
+  - ecs
+  - scheduled task
+properties:
+  # Step 1: Configuring AWS
+  key:
+    type: string
+    required: true
+  secret:
+    type: string
+    required: true
+  region:
+    type: string
+    required: false
+
+  # Step 2: Defining event rule
+  schedule-rule-name:
+    type: string
+    required: true
+  
+
+  # Step 2: Defining target
+  target-id:
+    type: string
+    required: true
